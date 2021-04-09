@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="C971.InputError">
+    <ContentPage.Content>
+        
+        
+        
+        <StackLayout>
+
+            <Image Source="https://www.accountablecarelc.org/sites/default/files/sites/default/files/imce/wgu-logo.png"
+       WidthRequest="{OnPlatform iOS=300, Android=250}"
+       HorizontalOptions="Center" Margin="0, 30, 0, 20"/>
+            <Label Text="An ERROR has occured" TextColor="Gray"
+               Margin="10,10,10,10"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+            <Label Text="ERROR - Please ensure all areas are completed ,email addresses are valid and dates are in correct format."
+                Margin="20,20,20,20"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="OK" 
+                x:Name="btnOK"
+                Clicked="btnOK_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

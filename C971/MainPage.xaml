@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="C971.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name ="btnNewTerm" Text="Add New Term" Clicked="btnNewTerm_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+
+        
+
+
+            <StackLayout>
+
+            <Image Source="https://www.accountablecarelc.org/sites/default/files/sites/default/files/imce/wgu-logo.png"
+       WidthRequest="{OnPlatform iOS=300, Android=250}"
+       HorizontalOptions="Center" Margin="0, 30, 0, 20"/>
+            <Label Text="My Schedule" TextColor="gray"
+               Margin="10,10,10,10"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <ListView x:Name="termsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                
+                                <Label Text="{Binding TermName}" VerticalOptions="Center" TextColor="Black"
+                            FontSize= "18"
+                            FontAttributes="Bold"/>
+                                <Label Text= "Start" VerticalOptions="Center" TextColor="Black"
+                                       FontSize="10"/>
+                                <Label Text="{Binding Start,StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center" TextColor="Black"
+                                   FontSize= "20"/>
+                                <Label Text= "End" VerticalOptions="Center" TextColor="Black"
+                                       FontSize="10"/>
+                                <Label Text="{Binding End,StringFormat='{}{0:MM/dd/yyyy}'}" VerticalOptions="Center" TextColor="Black"
+                                   FontSize= "20"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
