@@ -2,7 +2,7 @@
 Mobile College Course Planner/ Scheduler/ Project tracker
 
 Mobile Application Development
-A multiple-screen mobile application for WGU students to track their terms, courses associated with each term, and assessment(s) associated with each course. The application will allow students to enter, edit, and delete term, course, and assessment data. It should provide summary and detailed views of courses for each term and provide alerts for upcoming performance and objective assessments. This application will use a SQLite database.
+A multiple-screen mobile application for WGU students to track their terms, courses associated with each term, and assessment(s) associated with each course. The application will allow students to enter, edit, and delete term, course, and assessment data. It should provide summary and detailed views of courses for each term and provide alerts/notifications for upcoming performance and objective assessments. This application will use a SQLite database.
 
 SREENSHOTS:
 ![mobileplannerhomescreen](https://user-images.githubusercontent.com/54335750/114235759-a33b3f80-994e-11eb-9c40-cf0cf1638862.png)
